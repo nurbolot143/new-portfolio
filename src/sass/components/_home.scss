@@ -1,0 +1,139 @@
+@import "../vars";
+@import "../media";
+
+.home {
+  padding-bottom: 50px;
+
+  &__about {
+    position: sticky;
+    padding: 120px 0;
+
+    @include media(770) {
+      padding: 64px 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 64px;
+
+    @include media(770) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 25px;
+
+    @include media(770) {
+      margin-bottom: 18px;
+    }
+    a {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      span {
+        position: absolute;
+        display: inline-block;
+        padding: 10px 25px;
+        top: 50%;
+        left: 50%;
+        font-size: 25px;
+        opacity: 0;
+        z-index: 1;
+        border: 1px solid $light;
+        border-radius: 8px;
+        transition: 0.2s;
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0;
+        backdrop-filter: blur(10px);
+        transition: 0.3s;
+      }
+
+      &:hover::after {
+        opacity: 0.8;
+      }
+
+      &:hover span {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.card {
+  max-width: 870px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1.5px solid $border-color;
+  border-radius: 8px;
+  background: $card-dark;
+  display: flex;
+  align-items: center;
+
+  @include media(770) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__img {
+    flex: 0 0 300px;
+    height: 325px;
+    overflow: hidden;
+    margin-right: 32px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include media(770) {
+      margin-top: 24px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 45px 10px 25px;
+    background: url("../../assets//icons/arrowIcon.svg") no-repeat;
+    background-position: center right 10px;
+    border: 1px solid $light;
+    border-radius: 8px;
+  }
+
+  &__text {
+    margin: 30px 0 20px 0;
+  }
+}

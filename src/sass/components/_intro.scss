@@ -1,0 +1,57 @@
+@import "../vars";
+@import "../media";
+
+.intro {
+  height: 100vh;
+  text-align: center;
+
+  &__title {
+    padding-top: 120px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+    @include media(770) {
+      padding-top: 72px;
+    }
+
+    span {
+      display: block;
+      color: $accent-color;
+    }
+  }
+
+  h2 {
+    font-size: 45px;
+    color: $accent-color;
+    margin: 40px 0 55px 0;
+  }
+
+  a {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    animation: blink 3s infinite ease;
+
+    .intro__icon {
+      color: $light;
+      font-size: 5rem;
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    background-color: #e31b6d;
+  }
+
+  100% {
+    background-color: $accent-color;
+  }
+}
