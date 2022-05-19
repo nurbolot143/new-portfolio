@@ -1,0 +1,39 @@
+@import "../vars";
+@import "../media";
+
+.contact {
+  padding-top: 70px;
+
+  @include media(770) {
+    padding-top: 61px;
+  }
+
+  &__title {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  &__card {
+    margin-top: 70px;
+    max-width: 500px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 25px;
+
+    @include media(470) {
+      font-size: 17px;
+    }
+
+    @include media(320) {
+      font-size: 12px;
+    }
+
+    a {
+      padding: 0 0 0 10px;
+    }
+  }
+}
