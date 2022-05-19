@@ -85,6 +85,8 @@ h6 {
 body {
   font-family: $main-font;
   background: $dark;
+
+  overflow-y: scroll;
 }
 
 .App {
@@ -92,6 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 .body-lock {

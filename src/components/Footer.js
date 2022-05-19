@@ -11,12 +11,15 @@ const Footer = () => {
         <div className="footer__sociol">
           <ul className="footer__list">
             <li className="footer__item">
-              <a href="#">
+              <a href="https://github.com/nurbolot143" target="_blank">
                 <GitHubIcon fontSize="large" className="footer__icon" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/nurbolot-boobekov-1616a3232/"
+                target="_blank"
+              >
                 <LinkedInIcon fontSize="large" className="footer__icon" />
               </a>
             </li>

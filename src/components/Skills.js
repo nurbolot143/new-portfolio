@@ -1,49 +1,5 @@
 import React from "react";
-
-const skills = [
-  {
-    id: 0,
-    icon: "",
-    title: "React",
-    descr:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
-  },
-  {
-    id: 1,
-    icon: "",
-    title: "HTML / CSS",
-    descr:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
-  },
-  {
-    id: 2,
-    icon: "",
-    title: "Js",
-    descr:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
-  },
-  {
-    id: 3,
-    icon: "",
-    title: "Redux",
-    descr:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
-  },
-  {
-    id: 4,
-    icon: "",
-    title: "Bootstrap",
-    descr:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
-  },
-  {
-    id: 5,
-    icon: "",
-    title: "Git",
-    descr:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
-  },
-];
+import { skills } from "../data";
 
 const Skills = () => {
   return (
@@ -63,7 +19,9 @@ const View = ({ data }) => {
         return (
           <li key={id} className="skills__item">
             <div className="card skills__card">
-              <div className="skills__icon"></div>
+              <div className="skills__icon">
+                <img src={icon} alt={title} />
+              </div>
               <h2 className="skills__subtitle">{title}</h2>
               <p className="text skills__text">{descr}</p>
             </div>

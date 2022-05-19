@@ -17,13 +17,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 30px -2px;
+    margin: 30px -140px;
   }
 
   &__item {
     position: relative;
     flex: 0 0 25%;
-    padding: 4px;
+    padding: 14px;
     transition: all 0.6 ease;
 
     @include media(770) {
@@ -45,23 +45,6 @@
 
     a {
       overflow: hidden;
-
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        background: $dark;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        backdrop-filter: blur(10px);
-        transition: 0.1s;
-      }
-
-      &:hover::before {
-        opacity: 0.8;
-      }
     }
 
     img {

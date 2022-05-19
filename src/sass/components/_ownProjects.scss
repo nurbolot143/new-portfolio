@@ -19,6 +19,16 @@
     }
   }
 
+  &__img {
+    border-radius: 24px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__text {
     margin-bottom: 25px;
   }

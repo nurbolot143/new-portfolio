@@ -13,8 +13,13 @@
     }
   }
 
+  &__projects {
+    text-align: center;
+  }
+
   &__title {
     margin-bottom: 64px;
+    text-align: left;
 
     @include media(770) {
       margin-bottom: 32px;

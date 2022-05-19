@@ -1,16 +1,6 @@
 import React from "react";
 
-import layoutImg from "../assets/images/project1.png";
-
-const layoutItems = [
-  { id: 0, link: "#", title: "Screeno", img: layoutImg },
-  { id: 1, link: "#", title: "Screeno", img: layoutImg },
-  { id: 2, link: "#", title: "Screeno", img: layoutImg },
-  { id: 3, link: "#", title: "Screeno", img: layoutImg },
-  { id: 4, link: "#", title: "Screeno", img: layoutImg },
-  { id: 5, link: "#", title: "Screeno", img: layoutImg },
-  { id: 6, link: "#", title: "Screeno", img: layoutImg },
-];
+import { layoutItems } from "../data";
 
 const Layout = () => {
   return (
@@ -20,7 +10,7 @@ const Layout = () => {
         {layoutItems.map(({ id, link, title, img }) => {
           return (
             <li key={id} className="layout__item">
-              <a href={link}>
+              <a href={link} target="_blank">
                 <img src={img} alt={title} />
               </a>
             </li>

@@ -1,17 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-import layoutImg from "../assets/images/project1.png";
-
-const projects = [
-  { id: 0, link: "#", title: "Screeno", img: layoutImg },
-  { id: 1, link: "#", title: "Screeno", img: layoutImg },
-  { id: 2, link: "#", title: "Screeno", img: layoutImg },
-  { id: 3, link: "#", title: "Screeno", img: layoutImg },
-  { id: 4, link: "#", title: "Screeno", img: layoutImg },
-  { id: 5, link: "#", title: "Screeno", img: layoutImg },
-  { id: 6, link: "#", title: "Screeno", img: layoutImg },
-];
+import { projects } from "../data";
 
 const CourseProjects = () => {
   const settings = {

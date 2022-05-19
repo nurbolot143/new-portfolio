@@ -2,9 +2,8 @@ import React from "react";
 import Intro from "../components/Intro";
 
 import myPhoto from "../assets/images/myPhoto.jpg";
-import projectPhoto from "../assets/images/project1.png";
-
-const projects = [projectPhoto, projectPhoto, projectPhoto];
+import { ownProjects } from "../data";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -25,9 +24,9 @@ const Home = () => {
                 ipsum totam a autem rem, saepe voluptatibus ratione recusandae
                 eveniet, sapiente labore iusto!
               </p>
-              <a href="#" className="card__btn">
+              <Link className="card__btn" to="/aboutme">
                 Lear more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -36,17 +35,21 @@ const Home = () => {
           <h2 className="title home__title">Projects</h2>
 
           <ul className="home__list">
-            {projects.map((item, idx) => {
+            {ownProjects.map(({ id, title, img }) => {
               return (
-                <li key={idx} className="projects__item">
+                <li key={id} className="projects__item">
                   <a href="#" className="projects__link">
-                    <img src={item} alt="Project" />
+                    <img src={img} alt={title} />
                     <span>View</span>
                   </a>
                 </li>
               );
             })}
           </ul>
+
+          <Link to="/projects" className="card__btn">
+            View All
+          </Link>
         </div>
       </div>
     </div>
