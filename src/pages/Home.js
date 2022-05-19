@@ -1,5 +1,5 @@
 import React from "react";
-import Intro from "./Intro";
+import Intro from "../components/Intro";
 
 import myPhoto from "../assets/images/myPhoto.jpg";
 import projectPhoto from "../assets/images/project1.png";
@@ -13,7 +13,7 @@ const Home = () => {
 
       <div className="container">
         <div className="home__about" id="aboutme">
-          <div className="card">
+          <div className="card home__card">
             <div className="card__img">
               <img src={myPhoto} alt="Photo" />
             </div>
