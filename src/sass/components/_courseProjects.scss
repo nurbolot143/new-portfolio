@@ -1,0 +1,74 @@
+@import "../vars";
+@import "../media";
+
+.courseProjects {
+  margin-bottom: 80px;
+  &__title {
+    text-align: center;
+  }
+
+  &__slider {
+    padding: 40px 0;
+
+    @include media(1240) {
+      padding: 40px;
+    }
+
+    @include media(770) {
+      padding: 30px 20px;
+    }
+
+    @include media(470) {
+      padding: 20px 0;
+    }
+  }
+
+  a {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slick-next,
+  .slick-prev {
+    width: 40px;
+    height: 40px;
+    @include media(770) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include media(470) {
+      visibility: hidden;
+    }
+  }
+
+  .slick-next::before,
+  .slick-prev::before {
+    font-size: 40px;
+    @include media(770) {
+      font-size: 20px;
+    }
+  }
+
+  .slick-prev {
+    left: -45px;
+    @include media(770) {
+      left: -25px;
+    }
+  }
+
+  .slick-next {
+    right: -45px;
+    @include media(770) {
+      right: -25px;
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 15px;
+    color: $light;
+  }
+}

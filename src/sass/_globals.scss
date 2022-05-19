@@ -87,6 +87,13 @@ body {
   background: $dark;
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .body-lock {
   overflow: hidden;
 }
@@ -112,24 +119,11 @@ body {
   letter-spacing: 0.44px;
 }
 
-// .btn {
-//   display: inline-block;
-//   padding: 15px 51px;
-//   color: $light;
-//   background: $accent-color;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: 30px;
-//   border-radius: 5px;
-// }
-
 .title {
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 67px;
-  text-transform: capitalize;
+  font-size: 44px;
+  line-height: 57px;
 
   @include media(992) {
     font-size: 36px;
@@ -146,7 +140,7 @@ body {
 
 .subtitle {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 57px;
 
   @include media(770) {
@@ -155,20 +149,3 @@ body {
     line-height: 32px;
   }
 }
-
-// .logo {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 36px;
-//   line-height: 54px;
-//   color: $dark;
-
-//   @include media(992) {
-//     font-size: 30px;
-//     line-height: 45px;
-//   }
-
-//   span {
-//     color: #939393;
-//   }
-// }

@@ -38,7 +38,7 @@ const Home = () => {
           <ul className="home__list">
             {projects.map((item, idx) => {
               return (
-                <li key={idx} className="home__item">
+                <li key={idx} className="projects__item">
                   <a href="#">
                     <img src={item} alt="Project" />
                     <span>View</span>

@@ -1,0 +1,35 @@
+@import "../vars";
+@import "../media";
+
+.ownProjects {
+  &__title {
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+
+  &__item {
+    margin-bottom: 120px;
+
+    @include media(770) {
+      margin-bottom: 60px;
+    }
+
+    .card__btn {
+      display: inline;
+    }
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  &__subtitle {
+    margin: 20px 0 10px 0;
+  }
+
+  &__img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 28px;
+  }
+}

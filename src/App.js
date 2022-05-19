@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -11,7 +12,9 @@ const App = () => {
 
       {/* <Home /> */}
 
-      <AboutMe />
+      {/* <AboutMe /> */}
+
+      <Projects />
 
       <Footer />
     </div>
