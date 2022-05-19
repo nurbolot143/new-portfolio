@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(false);
 
-  const navItems = ["home", "about me", "project", "contact"];
+  const navItems = [
+    { id: 0, label: "home", to: "/" },
+    { id: 1, label: "about me", to: "/aboutme" },
+    { id: 2, label: "project", to: "/projects" },
+    { id: 3, label: "contact", to: "/contact" },
+  ];
 
   const addActiveClass = (relativeClass) =>
     isActive ? `${relativeClass} ${relativeClass}_active` : relativeClass;
@@ -12,17 +18,21 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header__inner">
-          <a href="#" className="logo">
+          <Link className="logo" to="/">
             Boobekov N
-          </a>
+          </Link>
           <nav className={addActiveClass("nav")}>
             <ul className="nav__list">
-              {navItems.map((item, idx) => {
+              {navItems.map(({ id, label, to }) => {
                 return (
-                  <li key={idx} className="nav__item">
-                    <a className="nav__link" href="#">
-                      {item}
-                    </a>
+                  <li key={id} className="nav__item">
+                    <NavLink
+                      className="nav__link"
+                      to={to}
+                      onClick={() => setIsActive(false)}
+                    >
+                      {label}
+                    </NavLink>
                   </li>
                 );
               })}

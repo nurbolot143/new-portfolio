@@ -13,8 +13,6 @@ const Intro = () => {
       placeholder: false,
       strings: ["I am front-end developer."],
     });
-
-    console.log("Hello");
   }, []);
 
   return (

@@ -39,7 +39,7 @@ const Home = () => {
             {projects.map((item, idx) => {
               return (
                 <li key={idx} className="projects__item">
-                  <a href="#">
+                  <a href="#" className="projects__link">
                     <img src={item} alt="Project" />
                     <span>View</span>
                   </a>
