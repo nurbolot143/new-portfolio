@@ -1,7 +1,7 @@
 import React from "react";
 import Intro from "../components/Intro";
 
-import myPhoto from "../assets/images/myPhoto.jpg";
+import myPhoto2 from "../assets/images/myPhoto2.jpg";
 import { ownProjects } from "../data";
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Home = () => {
         <div className="home__about" id="aboutme">
           <div className="card home__card">
             <div className="card__img">
-              <img src={myPhoto} alt="Photo" />
+              <img src={myPhoto2} alt="Photo" />
             </div>
             <div className="card__body">
               <h3 className="subtitle card__title">About me</h3>
@@ -35,10 +35,10 @@ const Home = () => {
           <h2 className="title home__title">Projects</h2>
 
           <ul className="home__list">
-            {ownProjects.map(({ id, title, img }) => {
+            {ownProjects.map(({ id, title, link, img }) => {
               return (
                 <li key={id} className="projects__item">
-                  <a href="#" className="projects__link">
+                  <a href={link} className="projects__link" target="_blank">
                     <img src={img} alt={title} />
                     <span>View</span>
                   </a>

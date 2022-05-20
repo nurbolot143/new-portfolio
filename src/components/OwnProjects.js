@@ -16,7 +16,7 @@ const OwnProjects = () => {
 const View = ({ data }) => {
   return (
     <ul className="ownProjects__list">
-      {data.map(({ id, title, img, descr }) => {
+      {data.map(({ id, title, img, link, descr }) => {
         return (
           <li key={id} className="ownProjects__item">
             <div className="ownProjects__img">
@@ -24,8 +24,8 @@ const View = ({ data }) => {
             </div>
             <h3 className="subtitle ownProjects__subtitle">{title}</h3>
             <p className="text ownProjects__text">{descr}</p>
-            <a href="#" className="card__btn">
-              Vew Demo
+            <a href={link} className="card__btn" target="_blank">
+              View
             </a>
           </li>
         );

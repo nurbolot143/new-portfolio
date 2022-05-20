@@ -24,6 +24,7 @@ export const ownProjects = [
     id: 0,
     title: "Weather App",
     img: ownProject2,
+    link: "https://nurbolot143.github.io/Weather-App/",
     descr:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusperferendis a harum quia rerum, laudantium, deleniti mollitianecessitatibus ea unde obcaecati ducimus voluptas quis, architectoreiciendis ut magnam maxime accusantium.",
   },
@@ -31,6 +32,7 @@ export const ownProjects = [
     id: 1,
     title: "To-do List",
     img: ownProject1,
+    link: "https://to-do-list143.herokuapp.com/",
     descr:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusperferendis a harum quia rerum, laudantium, deleniti mollitianecessitatibus ea unde obcaecati ducimus voluptas quis, architectoreiciendis ut magnam maxime accusantium.",
   },
@@ -38,6 +40,7 @@ export const ownProjects = [
     id: 2,
     title: "Git profiles",
     img: ownProject3,
+    link: "#",
     descr:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusperferendis a harum quia rerum, laudantium, deleniti mollitianecessitatibus ea unde obcaecati ducimus voluptas quis, architectoreiciendis ut magnam maxime accusantium.",
   },

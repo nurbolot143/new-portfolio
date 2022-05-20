@@ -16,7 +16,7 @@ const CourseProjects = () => {
     <section className="courseProjects">
       <div className="container">
         <h2 className="title courseProjects__title">
-          Проекты сделанные в ходе обучения на курсах
+          Проекты сделанные в ходе обучения
         </h2>
 
         <div className="courseProjects__slider">

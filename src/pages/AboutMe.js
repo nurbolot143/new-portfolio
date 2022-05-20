@@ -1,6 +1,6 @@
 import React from "react";
 
-import myPhoto from "../assets/images/myPhoto.jpg";
+import myPhoto2 from "../assets/images/myPhoto2.jpg";
 import Skills from "../components/Skills";
 
 const AboutMe = () => {
@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className="container">
           <div className="aboutMe__inner">
             <div className="aboutMe__img">
-              <img src={myPhoto} alt="MyPhoto" />
+              <img src={myPhoto2} alt="MyPhoto" />
             </div>
 
             <div className="aboutMe__body">
