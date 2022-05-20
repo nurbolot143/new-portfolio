@@ -40,7 +40,7 @@ export const ownProjects = [
     id: 2,
     title: "Git profiles",
     img: ownProject3,
-    link: "#",
+    link: "https://nurbolot143.github.io/",
     descr:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusperferendis a harum quia rerum, laudantium, deleniti mollitianecessitatibus ea unde obcaecati ducimus voluptas quis, architectoreiciendis ut magnam maxime accusantium.",
   },

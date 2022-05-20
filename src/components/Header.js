@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -18,7 +18,13 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header__inner">
-          <Link className="logo" to="/">
+          <Link
+            className="logo"
+            to="/"
+            onClick={() => {
+              setIsActive(false);
+            }}
+          >
             Boobekov N
           </Link>
           <nav className={addActiveClass("nav")}>
@@ -30,6 +36,9 @@ const Header = () => {
                       className="nav__link"
                       to={to}
                       onClick={() => setIsActive(false)}
+                      style={({ isActive }) => ({
+                        borderBottom: isActive ? "3px solid #3c40ae" : "none",
+                      })}
                     >
                       {label}
                     </NavLink>

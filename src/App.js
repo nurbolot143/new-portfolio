@@ -8,21 +8,24 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 import "./sass/App.scss";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <ScrollToTop>
+          <Header />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
 
-        <Footer />
+          <Footer />
+        </ScrollToTop>
       </div>
     </Router>
   );
