@@ -120,7 +120,7 @@ export const skills = [
     icon: skill2,
     title: "SASS",
     descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa.",
   },
   {
     id: 2,
