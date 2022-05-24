@@ -94,6 +94,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow-x: hidden;
+  text-align: center;
 }
 
 .body-lock {
@@ -115,28 +116,45 @@ body {
 }
 
 .text {
+  text-align: left;
   font-weight: 400;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 38px;
   letter-spacing: 0.44px;
 }
 
 .title {
+  display: inline-block;
+  position: relative;
   font-style: normal;
   font-weight: 600;
-  font-size: 44px;
+  font-size: 40px;
+  text-transform: uppercase;
   line-height: 57px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 
-  @include media(992) {
-    font-size: 36px;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $accent-color;
   }
 
-  @include media(767) {
+  @include media(992) {
     font-size: 30px;
   }
 
+  @include media(767) {
+    font-size: 25px;
+  }
+
   @include media(320) {
-    font-size: 24;
+    font-size: 20;
   }
 }
 

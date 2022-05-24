@@ -43,7 +43,7 @@ const Header = () => {
                       to={to}
                       onClick={onActiveFalse}
                       style={({ isActive }) => ({
-                        borderBottom: isActive ? "3px solid #3c40ae" : "none",
+                        borderBottom: isActive ? "4px solid #f3c26b" : "none",
                       })}
                     >
                       {label}

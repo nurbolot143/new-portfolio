@@ -2,10 +2,12 @@ import React from "react";
 import Intro from "../components/Intro";
 
 import myPhoto2 from "../assets/images/myPhoto2.jpg";
-import { ownProjects } from "../data";
+import { aboutMe, ownProjects } from "../data";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const aboutDescr = aboutMe.slice(0, 199) + "...";
+
   return (
     <div className="home">
       <Intro />
@@ -18,12 +20,7 @@ const Home = () => {
             </div>
             <div className="card__body">
               <h3 className="subtitle card__title">About me</h3>
-              <p className="text card__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                aliquam veniam illo corporis tenetur deleniti ipsa corrupti
-                ipsum totam a autem rem, saepe voluptatibus ratione recusandae
-                eveniet, sapiente labore iusto!
-              </p>
+              <p className="text card__text">{aboutDescr}</p>
               <Link className="card__btn" to="/aboutme">
                 Lear more
               </Link>

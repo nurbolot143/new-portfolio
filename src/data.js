@@ -151,3 +151,6 @@ export const skills = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
   },
 ];
+
+export const aboutMe =
+  "Более года увлекаюсь программированием, прошел онлайн курс по front-end разработке в Jyldyz Academy, прохожу обучающие программы, смотрю видеоролики, параллельно разрабатываю мини-проекты: есть сверстанные макеты сайтов, самостоятельно разработал пару мини проектов(JS/ React) + несколько проектов в ходе обучения, ссылка на мое портфолио: nurbolot123.github.ioУмею работать с Git и Chrome DevTools, а также есть опыт разработки по методологии SCRUM.Люблю решать задачи на codewars и leetCode: codewars.com/users/nurbolot143 leetcode.com/Nurbolot_/";
