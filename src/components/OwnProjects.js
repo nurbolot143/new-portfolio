@@ -22,11 +22,13 @@ const View = ({ data }) => {
             <div className="ownProjects__img">
               <img src={img} alt={title} />
             </div>
-            <h3 className="subtitle ownProjects__subtitle">{title}</h3>
-            <p className="text ownProjects__text">{descr}</p>
-            <a href={link} className="card__btn" target="_blank">
-              Посмотреть
-            </a>
+            <div className="ownProjects__body">
+              <h3 className="subtitle ownProjects__subtitle">{title}</h3>
+              <p className="text ownProjects__text">{descr}</p>
+              <a href={link} className="card__btn" target="_blank">
+                Посмотреть
+              </a>
+            </div>
           </li>
         );
       })}

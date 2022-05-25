@@ -24,10 +24,66 @@
   }
 
   a {
+    position: relative;
     overflow: hidden;
+    transition: all 0.6s ease;
 
     img {
       width: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      height: 70%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #000;
+      opacity: 0;
+      backdrop-filter: blur(10px);
+      transition: all 0.5s ease;
+
+      @include media(920) {
+        opacity: 0.8;
+      }
+    }
+
+    &:hover {
+      transform: scale(0.9);
+    }
+
+    &:hover::after {
+      opacity: 0.7;
+    }
+
+    &:hover .courseProjects__descr {
+      opacity: 1;
+    }
+  }
+
+  &__descr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    @include media(920) {
+      opacity: 1;
+    }
+
+    h4 {
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: $accent-color;
+    }
+
+    span {
+      font-size: 24px;
     }
   }
 

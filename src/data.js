@@ -19,22 +19,18 @@ import {
   project6,
 } from "./assets/images";
 
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import TelegramIcon from "@mui/icons-material/Telegram";
+
 export const ownProjects = [
-  {
-    id: 0,
-    title: "Weather App",
-    img: ownProject2,
-    link: "https://nurbolot143.github.io/Weather-App/",
-    descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusperferendis a harum quia rerum, laudantium, deleniti mollitianecessitatibus ea unde obcaecati ducimus voluptas quis, architectoreiciendis ut magnam maxime accusantium.",
-  },
   {
     id: 1,
     title: "To-do List",
     img: ownProject1,
     link: "https://to-do-list143.herokuapp.com/",
     descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusperferendis a harum quia rerum, laudantium, deleniti mollitianecessitatibus ea unde obcaecati ducimus voluptas quis, architectoreiciendis ut magnam maxime accusantium.",
+      "Это - приложения для составления списков задач. Можно создавать, удалять и изменять задачи. А также отметить как проделанную. Задачи филтрируются по дням. Внизу каждого дня отображается процентное соотношение проделанных задач. Для создания To-do List использовал React, MUI, SASS и git.",
   },
   {
     id: 2,
@@ -42,7 +38,15 @@ export const ownProjects = [
     img: ownProject3,
     link: "https://nurbolot143.github.io/",
     descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minusperferendis a harum quia rerum, laudantium, deleniti mollitianecessitatibus ea unde obcaecati ducimus voluptas quis, architectoreiciendis ut magnam maxime accusantium.",
+      "Используя Git Profiles можно найти github пользователя и узнать подробную информацию о нем. После введения поискового запроса на левой панели отображается список пользователей. При нажатии на конкретного user'a выводиться данные о нем и список репозиторий. Стек: React, Bootstrap, SASS, git и Fetch Api. Данные взяты из открытого api - api.gitbut.com ",
+  },
+  {
+    id: 0,
+    title: "Weather App",
+    img: ownProject2,
+    link: "https://nurbolot143.github.io/Weather-App/",
+    descr:
+      "Для создания сайта использовал HTML, CSS и JS. Сайт рассчитан как для десктоптых так и для мобильных усстройсв. Данные взяты из открытого aip - openweather. Для получения ресурсов использовал Fetch Api",
   },
 ];
 
@@ -67,23 +71,23 @@ export const layoutItems = [
     img: layout2,
   },
   {
-    id: 7,
-    link: "https://nurbolot143.github.io/screeno/",
-    title: "Screeno",
-    img: layout8,
+    id: 3,
+    link: "https://nurbolot143.github.io/kyrgyz-fruit/",
+    title: "Kyrgyz fruit",
+    img: layout4,
   },
+
   {
     id: 0,
     link: "https://nurbolot143.github.io/Britlex/",
     title: "Britlex",
     img: layout1,
   },
-
   {
-    id: 3,
-    link: "https://nurbolot143.github.io/kyrgyz-fruit/",
-    title: "Kyrgyz fruit",
-    img: layout4,
+    id: 7,
+    link: "https://nurbolot143.github.io/screeno/",
+    title: "Screeno",
+    img: layout8,
   },
 
   {
@@ -101,12 +105,30 @@ export const layoutItems = [
 ];
 
 export const projects = [
-  { id: 0, link: "#", title: "Food", img: project1 },
-  { id: 1, link: "#", title: "Employees", img: project2 },
-  { id: 2, link: "#", title: "Admin Panel", img: project3 },
-  { id: 3, link: "#", title: "Marvel", img: project4 },
-  { id: 4, link: "#", title: "Daily Journal", img: project5 },
-  { id: 5, link: "#", title: "Link", img: project6 },
+  {
+    id: 0,
+    link: "https://nurbolot143.github.io/food/",
+    title: "Food",
+    img: project1,
+    demo: true,
+  },
+  {
+    id: 1,
+    link: "https://employees-app1.herokuapp.com/",
+    title: "Employees",
+    img: project2,
+    demo: true,
+  },
+  {
+    id: 3,
+    link: "https://marvel-app12.herokuapp.com/",
+    title: "Marvel",
+    img: project4,
+    demo: true,
+  },
+  { id: 2, link: "#", title: "Admin Panel", img: project3, demo: false },
+  { id: 4, link: "#", title: "Daily Journal", img: project5, demo: false },
+  { id: 5, link: "#", title: "Link", img: project6, demo: false },
 ];
 
 export const skills = [
@@ -151,5 +173,29 @@ export const skills = [
     title: "REDUX ",
     descr:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
+  },
+];
+
+export const contact = [
+  {
+    id: 0,
+    name: "phone",
+    label: "Позвонить",
+    link: "tel:+996794690533",
+    icon: <PhoneIcon fontSize="large" className="contact__icon" />,
+  },
+  {
+    id: 1,
+    name: "email",
+    label: "nurbolot.boobekovv@gmail.com",
+    link: "mailto:nurbolot.boobekovv@gmail.com",
+    icon: <EmailIcon fontSize="large" className="contact__icon" />,
+  },
+  {
+    id: 2,
+    name: "telegram",
+    label: "Написать",
+    link: "https://telegram.me/Nurbolo08300613",
+    icon: <TelegramIcon fontSize="large" className="contact__icon" />,
   },
 ];

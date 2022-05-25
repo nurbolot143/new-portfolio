@@ -21,10 +21,20 @@ const CourseProjects = () => {
 
         <div className="courseProjects__slider">
           <Slider {...settings}>
-            {projects.map(({ id, title, link, img }) => {
+            {projects.map(({ id, title, link, img, demo }) => {
               return (
-                <a key={id} href={link}>
+                <a
+                  key={id}
+                  href={link}
+                  target={link === "#" ? "_self" : "_blank"}
+                >
                   <img src={img} alt={title} />
+                  <div className="courseProjects__descr">
+                    <h4 className="courseProjects__subtitle">{title}</h4>
+                    <span>
+                      {demo ? "Посмотреть" : "Demo версия отсутствует"}
+                    </span>
+                  </div>
                 </a>
               );
             })}
