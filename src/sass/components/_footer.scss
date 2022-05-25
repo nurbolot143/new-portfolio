@@ -21,4 +21,8 @@
     padding: 17px 0;
     border-top: 1px solid $border-color;
   }
+
+  li:hover &__icon {
+    color: $accent-color;
+  }
 }

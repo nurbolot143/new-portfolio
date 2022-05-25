@@ -13,15 +13,17 @@
     text-align: center;
   }
 
-  &__card {
-    margin-top: 70px;
-    max-width: 500px;
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__item {
     display: flex;
-    align-items: center;
-    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
     font-size: 25px;
 
     @include media(470) {
@@ -35,5 +37,17 @@
     a {
       padding: 0 0 0 10px;
     }
+  }
+
+  &__descr {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  &__icon {
+    color: $accent-color;
+    margin-right: 10px;
   }
 }

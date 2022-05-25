@@ -48,16 +48,10 @@ export const ownProjects = [
 
 export const layoutItems = [
   {
-    id: 0,
-    link: "https://nurbolot143.github.io/Britlex/",
-    title: "Britlex",
-    img: layout1,
-  },
-  {
-    id: 1,
-    link: "https://nurbolot143.github.io/CloudBudget-Freebie/",
-    title: "CloudBudget Freebie",
-    img: layout2,
+    id: 8,
+    link: "https://nurbolot143.github.io/Landing_P/",
+    title: "Landing_P",
+    img: layout9,
   },
   {
     id: 2,
@@ -67,17 +61,31 @@ export const layoutItems = [
   },
 
   {
+    id: 1,
+    link: "https://nurbolot143.github.io/CloudBudget-Freebie/",
+    title: "CloudBudget Freebie",
+    img: layout2,
+  },
+  {
+    id: 7,
+    link: "https://nurbolot143.github.io/screeno/",
+    title: "Screeno",
+    img: layout8,
+  },
+  {
+    id: 0,
+    link: "https://nurbolot143.github.io/Britlex/",
+    title: "Britlex",
+    img: layout1,
+  },
+
+  {
     id: 3,
     link: "https://nurbolot143.github.io/kyrgyz-fruit/",
     title: "Kyrgyz fruit",
     img: layout4,
   },
-  {
-    id: 8,
-    link: "https://nurbolot143.github.io/Landing_P/",
-    title: "Landing_P",
-    img: layout9,
-  },
+
   {
     id: 4,
     link: "https://nurbolot143.github.io/LandingPage/",
@@ -89,12 +97,6 @@ export const layoutItems = [
     link: "https://nurbolot143.github.io/The-Loop/",
     title: "The Loop",
     img: layout7,
-  },
-  {
-    id: 7,
-    link: "https://nurbolot143.github.io/screeno/",
-    title: "Screeno",
-    img: layout8,
   },
 ];
 
@@ -151,6 +153,3 @@ export const skills = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
   },
 ];
-
-export const aboutMe =
-  "Более года увлекаюсь программированием, прошел онлайн курс по front-end разработке в Jyldyz Academy, прохожу обучающие программы, смотрю видеоролики, параллельно разрабатываю мини-проекты: есть сверстанные макеты сайтов, самостоятельно разработал пару мини проектов(JS/ React) + несколько проектов в ходе обучения, ссылка на мое портфолио: nurbolot123.github.ioУмею работать с Git и Chrome DevTools, а также есть опыт разработки по методологии SCRUM.Люблю решать задачи на codewars и leetCode: codewars.com/users/nurbolot143 leetcode.com/Nurbolot_/";

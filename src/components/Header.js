@@ -7,10 +7,10 @@ const Header = () => {
   const body = document.querySelector("body");
 
   const navItems = [
-    { id: 0, label: "home", to: "/" },
-    { id: 1, label: "about me", to: "/aboutme" },
-    { id: 2, label: "project", to: "/projects" },
-    { id: 3, label: "contact", to: "/contact" },
+    { id: 0, label: "главная", to: "/" },
+    { id: 1, label: "обо мне", to: "/aboutme" },
+    { id: 2, label: "проекты", to: "/projects" },
+    { id: 3, label: "контакты", to: "/contact" },
   ];
 
   const onActiveFalse = () => {

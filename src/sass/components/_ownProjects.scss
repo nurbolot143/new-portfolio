@@ -3,11 +3,11 @@
 
 .ownProjects {
   &__title {
-    text-align: center;
     margin: 30px 0 50px 0;
   }
 
   &__item {
+    text-align: left;
     margin-bottom: 120px;
 
     @include media(770) {

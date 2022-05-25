@@ -11,7 +11,7 @@ const Intro = () => {
       backDelay: 5000,
       backSpeed: 60,
       placeholder: false,
-      strings: ["I am front-end developer."],
+      strings: ["Я front-end разработчик."],
     });
   }, []);
 
@@ -19,7 +19,7 @@ const Intro = () => {
     <section className="intro">
       <div className="container ">
         <h1 className="intro__title">
-          Hello, I'm <span>Nurbolot Boobekov.</span>
+          Привет, Меня зовут <span>Нурболот</span>
         </h1>
         <h2>
           <span ref={animatedTextRef}></span>

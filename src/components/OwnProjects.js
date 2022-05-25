@@ -6,7 +6,7 @@ const OwnProjects = () => {
   return (
     <section className="ownProjects">
       <div className="container">
-        <h2 className="title ownProjects__title">Own Projects</h2>
+        <h2 className="title ownProjects__title">Собственные проекты</h2>
         <View data={ownProjects} />
       </div>
     </section>
@@ -25,7 +25,7 @@ const View = ({ data }) => {
             <h3 className="subtitle ownProjects__subtitle">{title}</h3>
             <p className="text ownProjects__text">{descr}</p>
             <a href={link} className="card__btn" target="_blank">
-              View
+              Посмотреть
             </a>
           </li>
         );

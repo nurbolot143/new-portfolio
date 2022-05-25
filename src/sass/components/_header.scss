@@ -116,8 +116,10 @@
   &__link {
     position: relative;
     padding: 8px 0;
+    text-transform: uppercase;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
     line-height: 16px;
     color: $light;
 
