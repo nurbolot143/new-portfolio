@@ -46,7 +46,7 @@ export const ownProjects = [
     img: ownProject2,
     link: "https://nurbolot143.github.io/Weather-App/",
     descr:
-      "Для создания сайта использовал HTML, CSS и JS. Сайт рассчитан как для десктоптых так и для мобильных усстройсв. Данные взяты из открытого aip - openweather. Для получения ресурсов использовал Fetch Api",
+      "Для создания сайта использовал HTML, CSS и JS. Сайт рассчитан как для десктоптых так и для мобильных устройсв. Данные взяты из открытого aip - openweather. Для получения ресурсов использовал Fetch Api",
   },
 ];
 
@@ -136,43 +136,31 @@ export const skills = [
     id: 0,
     icon: skill1,
     title: "HTML / CSS",
-    descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
   },
   {
     id: 1,
     icon: skill2,
     title: "SASS",
-    descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa.",
   },
   {
     id: 2,
     icon: skill3,
     title: "JS",
-    descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
   },
   {
     id: 3,
     icon: skill4,
     title: "GIT",
-    descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
   },
   {
     id: 4,
     icon: skill5,
     title: "REACT",
-    descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
   },
   {
     id: 5,
     icon: skill6,
     title: "REDUX ",
-    descr:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eosdolore iste totam unde! Exercitationem repellat rerumvoluptates! Itaque, corrupti culpa aspernatur magnam doloremdebitis, at distinctio doloremque expedita, obcaecati ad.",
   },
 ];
 
