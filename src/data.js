@@ -52,18 +52,29 @@ export const ownProjects = [
 
 export const layoutItems = [
   {
-    id: 8,
-    link: "https://nurbolot143.github.io/Landing_P/",
-    title: "Landing_P",
-    img: layout9,
-  },
-  {
     id: 2,
     link: "https://nurbolot143.github.io/Eazy-Camper/",
     title: "Eazy Camper",
     img: layout3,
   },
-
+  {
+    id: 7,
+    link: "https://nurbolot143.github.io/screeno/",
+    title: "Screeno",
+    img: layout8,
+  },
+  {
+    id: 0,
+    link: "https://nurbolot143.github.io/Britlex/",
+    title: "Britlex",
+    img: layout1,
+  },
+  {
+    id: 4,
+    link: "https://nurbolot143.github.io/LandingPage/",
+    title: "LandingPage",
+    img: layout5,
+  },
   {
     id: 1,
     link: "https://nurbolot143.github.io/CloudBudget-Freebie/",
@@ -76,25 +87,11 @@ export const layoutItems = [
     title: "Kyrgyz fruit",
     img: layout4,
   },
-
   {
-    id: 0,
-    link: "https://nurbolot143.github.io/Britlex/",
-    title: "Britlex",
-    img: layout1,
-  },
-  {
-    id: 7,
-    link: "https://nurbolot143.github.io/screeno/",
-    title: "Screeno",
-    img: layout8,
-  },
-
-  {
-    id: 4,
-    link: "https://nurbolot143.github.io/LandingPage/",
-    title: "LandingPage",
-    img: layout5,
+    id: 8,
+    link: "https://nurbolot143.github.io/Landing_P/",
+    title: "Landing_P",
+    img: layout9,
   },
   {
     id: 6,
@@ -169,7 +166,7 @@ export const contact = [
     id: 0,
     name: "phone",
     label: "Позвонить",
-    link: "tel:+996794690533",
+    link: "tel:+996704690533",
     icon: <PhoneIcon fontSize="large" className="contact__icon" />,
   },
   {

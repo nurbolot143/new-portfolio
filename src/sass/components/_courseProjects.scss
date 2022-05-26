@@ -48,6 +48,10 @@
       @include media(920) {
         opacity: 0.8;
       }
+
+      @include media(770) {
+        height: 80%;
+      }
     }
 
     &:hover {
@@ -80,10 +84,19 @@
       font-size: 34px;
       margin-bottom: 20px;
       color: $accent-color;
+
+      @include media(770) {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
     }
 
     span {
       font-size: 24px;
+
+      @include media(770) {
+        font-size: 16px;
+      }
     }
   }
 
