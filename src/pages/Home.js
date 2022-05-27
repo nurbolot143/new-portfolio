@@ -14,7 +14,7 @@ const Home = () => {
         <div className="home__about" id="aboutme">
           <div className="card home__card">
             <div className="card__img">
-              <img src={myPhoto2} alt="Photo" />
+              <img src={myPhoto2} alt="MyPhoto" />
             </div>
             <div className="card__body">
               <h3 className="subtitle card__title">Обо мне</h3>
@@ -38,7 +38,12 @@ const Home = () => {
             {ownProjects.map(({ id, title, link, img }) => {
               return (
                 <li key={id} className="projects__item">
-                  <a href={link} className="projects__link" target="_blank">
+                  <a
+                    href={link}
+                    className="projects__link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img src={img} alt={title} />
                     <span>{title}</span>
                   </a>

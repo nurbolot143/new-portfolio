@@ -16,7 +16,6 @@ const AboutMe = () => {
 
             <div className="aboutMe__body">
               <h3>Меня зовут Нурболот</h3>
-              <h4></h4>
               <p className="text ">
                 Мне 21 год. Я Frontend разработчик. Более года увлекаюсь
                 программированием, прошел онлайн курс по front-end разработке в
@@ -33,6 +32,7 @@ const AboutMe = () => {
                     className="aboutMe__link"
                     href="https://codewars.com/users/nurbolot143"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     codewars.com/users/nurbolot143
                   </a>
@@ -42,6 +42,7 @@ const AboutMe = () => {
                     className="aboutMe__link"
                     href="https://leetcode.com/Nurbolot_/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     leetcode.com/Nurbolot_/
                   </a>

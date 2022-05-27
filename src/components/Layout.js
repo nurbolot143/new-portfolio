@@ -10,7 +10,7 @@ const Layout = () => {
         {layoutItems.map(({ id, link, title, img }) => {
           return (
             <li key={id} className="layout__item">
-              <a href={link} target="_blank">
+              <a href={link} target="_blank" rel="noopener noreferrer">
                 <img src={img} alt={title} />
               </a>
             </li>

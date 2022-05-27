@@ -22,11 +22,13 @@ const CourseProjects = () => {
         <div className="courseProjects__slider">
           <Slider {...settings}>
             {projects.map(({ id, title, link, img, demo }) => {
+              const target = link === "#" ? "_self" : "_blank";
               return (
                 <a
                   key={id}
                   href={link}
-                  target={link === "#" ? "_self" : "_blank"}
+                  target={target}
+                  rel="noopener noreferrer"
                 >
                   <img src={img} alt={title} />
                   <div className="courseProjects__descr">

@@ -13,7 +13,7 @@ const Contact = () => {
                 <div className="contact__descr">
                   {icon} {name}
                 </div>
-                <a href={link} target="_blank">
+                <a href={link} target="_blank" rel="noopener noreferrer">
                   {label}
                 </a>
               </li>
