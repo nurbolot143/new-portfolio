@@ -180,7 +180,7 @@ export const contact = [
     id: 2,
     name: "telegram",
     label: "Написать",
-    link: "https://telegram.me/Nurbolo08300613",
+    link: "https://telegram.me/Boobekov",
     icon: <TelegramIcon fontSize="large" className="contact__icon" />,
   },
 ];
